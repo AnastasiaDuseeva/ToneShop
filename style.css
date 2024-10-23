@@ -1,0 +1,260 @@
+/*Так пишутся комментарии*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top_menu {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top_menu header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#site-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-catalog,
+.search,
+.basket,
+.enterance {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.top-catalog a {
+    display: flex;
+    align-items: center;
+    background-color: black; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Занимает все оставшееся место */
+    margin-left: 10px;
+}
+
+.search input[type="search"] {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 400px; 
+    margin-right: 20px;
+}
+
+.basket img, .enterance img {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.advertisement img {    /*рекламн баннер*/
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 30px 0;
+}
+
+.sales {
+    text-align: center;
+}
+
+#sales_for_a_week {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.SaleList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.SaleList div {
+    width: 30%;
+    text-align: center;
+}
+
+.SaleList img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sales + .advertisement{
+    border-top: 2px solid #ccc;
+}
+
+#Catalog_name {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.bottom-catalog {
+    display: flex;
+    justify-content: space-around; 
+    padding: 0 20px;
+    margin: 20px 0;
+    text-align: center; 
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    align-items: center;
+   /* text-align: center;*/
+   /* margin-right: 10px;*/
+}
+
+.catalog-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.bottom-catalog-text {
+    display: inline-block; 
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px; 
+    text-decoration: none;
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 14px;
+    width: 70%;
+    box-sizing: border-box
+   /* margin-right: 100px;
+    margin-left: 150px;
+    margin-bottom: 50px;*/
+}
+
+.bottom-catalog-text:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 30px 20px;
+    font-size: 16px; 
+    color: black;
+    border-top: 1px solid #ccc;
+}
+
+footer .footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Вертикальное выравнивание*/
+}
+
+footer #footer-name-of-site {
+    font-size: 20px; 
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+footer .refs {
+    display: flex; 
+    justify-content: center;
+    gap: 40px; 
+    flex: 1;
+}
+
+footer .refs a {
+    font-size: 16px; 
+    text-decoration: none;
+    color: black; 
+    margin-right: 15px;
+}
+
+footer .refs a:hover {
+    text-decoration: underline; 
+}
+
+footer .mail {
+    margin-left: auto; 
+    font-size: 16px; 
+    text-align: right;
+    color: black;
+}
+
+footer .underline-footer {
+    text-align: center; 
+    margin: 15px 0; 
+}
+
+footer #feedback {
+    text-align: left; 
+    font-size: 16px; 
+    margin-top: 30px;
+    color: black;
+}
+
+footer #feedback a {
+    text-decoration: none; 
+    color: black; 
+}
+
+footer #feedback a:hover {
+    text-decoration: underline; 
+}
+
+footer #rights {
+    text-align: right;
+    font-size: 16px; 
+    color: black; 
+    margin-top: 10px;
+}
